@@ -1,0 +1,49 @@
+# Git Configuration
+
+[user]
+  email = harry.lewis@queensu.ca
+  name = Harry Lewis
+
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[credential]
+  helper = osxkeychain
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+
+[status]
+  showUntrackedFiles = all
+
+[commit]
+  template = ~/.gitmessage
+
+[push]
+  default = current
+
+[alias]
+  st = status -sb
+  di = diff
+  dc = diff --cached
+  co = checkout
+  cob = checkout -b
+  br = branch
+  ad = add
+  ci = commit
+  ls = log --oneline
+  unstage = reset HEAD --
+  stash-all = stash --include-untracked
+  type = cat-file -t
+  dump = cat-file -p
+  sta = stash --include-untracked
+  pop = stash pop
+  praise = blame
+  deploy-current = !sh -c 'git rev-parse --abbrev-ref HEAD | xargs -I% -n 1 git push --verbose --force himama-dev %:master'

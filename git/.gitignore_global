@@ -1,0 +1,13 @@
+# More can be found here: https://gist.github.com/octocat/9257657
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+# Vim Swap Files
+*.swp
+
+# Redis
+*.rdb

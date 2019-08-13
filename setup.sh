@@ -15,7 +15,7 @@ ln -s -f "$SCRIPTPATH/bash/.bash_profile" ~/.bash_profile
 # vim
 echo "       Linking ~/.vimrc"
 
-ln -s -f "$SCRIPTPATH/vim/.vimrc ~/.vimrc" ~/.vimrc
+ln -s -f "$SCRIPTPATH/vim/.vimrc" ~/.vimrc
 
 # git
 echo "       Linking ~/.gitconfig"

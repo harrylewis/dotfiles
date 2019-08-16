@@ -142,6 +142,13 @@
     ssh-add -K ~/.ssh/id_rsa
   }
 
+# Create .gitignore using gitignore.io
+# -------------------------------------------------------------
+
+gi() {
+  curl -sL https://www.gitignore.io/api/$@;
+}
+
 #  -------------------------------
 #  5. Reminder & Notes
 #  -------------------------------

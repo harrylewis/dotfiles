@@ -149,6 +149,14 @@ gi() {
   curl -sL https://www.gitignore.io/api/$@;
 }
 
+# Create utility function to insert text into clipboard
+# -------------------------------------------------------------
+
+clip() {
+  echo "$1" | tr -d '\n' | pbcopy
+  echo "Copied '`echo "$1" | tr -d "\n"`' to the general clipboard."
+}
+
 #  -------------------------------
 #  5. Reminder & Notes
 #  -------------------------------

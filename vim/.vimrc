@@ -21,8 +21,10 @@
 "  show current position in status bar
    set ruler
 
-"  show line numbers
+"  show line numbers and relative line numbers
    set number
+   " Not working for me at the moment, come back to this later
+"   set relativenumber
 
 "  configure backsapce to act as expected
    set backspace=indent,eol,start

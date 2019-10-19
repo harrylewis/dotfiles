@@ -157,6 +157,13 @@ clip() {
   echo "Copied '`echo "$1" | tr -d "\n"`' to the general clipboard."
 }
 
+# Create utility function to get GitHub line link
+# -------------------------------------------------------------
+
+higili() {
+  clip "https://github.com/HiMamaInc/hm-proj/blob/master/$1#L$2"
+}
+
 # Git Bash completation
 # -------------------------------------------------------------
 

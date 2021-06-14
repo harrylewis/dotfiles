@@ -174,6 +174,34 @@ higili() {
   clip "https://github.com/HiMamaInc/hm-proj/blob/master/$1#L$2"
 }
 
+# Open up the Dependabot SemVer Compatibility score
+# -------------------------------------------------------------
+
+dependabot-compat() {
+  open "https://dependabot.com/compatibility-score.html/?dependency-name=$1&package-manager=bundler&version-scheme=semver"
+}
+
+# Vim with a Fuzzy Finder
+# -------------------------------------------------------------
+
+vi-fzf() {
+  vi $(fzf)
+}
+
+# RSpec with a Fuzzy Finder
+# -------------------------------------------------------------
+
+rspec-fzf() {
+  bundle exec spring rspec $(fzf)
+}
+
+# Convert ASCII integer to graphical character
+# -------------------------------------------------------------
+
+convert_ascii_integer_to_char() {
+  awk 'BEGIN{printf "%c\n", '$1'}'
+}
+
 # Git Bash completation
 # -------------------------------------------------------------
 

@@ -39,3 +39,19 @@
 
    PATH="/usr/local/ngrok:${PATH}"
    export PATH
+
+# GO
+# ------------------------------------------------------------------------------
+
+  export GOPATH=~/go
+
+# All installed executables
+# ------------------------------------------------------------------------------
+
+  PATH="/usr/local/bin:${PATH}"
+  export PATH
+
+# PostgreSQL
+# ------------------------------------------------------------------------------
+
+  export PATH="/usr/local/opt/postgresql@12/bin:$PATH"

@@ -58,7 +58,7 @@
 #  Activate autoenv
 #  ------------------------------------------------------------
 
-   . $(brew --prefix autoenv)/activate.sh
+#   . $(brew --prefix autoenv)/activate.sh
 
 #  -------------------------------
 #  2. Make Terminal Better

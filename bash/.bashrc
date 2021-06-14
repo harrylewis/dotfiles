@@ -72,6 +72,7 @@
    alias be="bundle exec"
    alias bes="bundle exec spring"
    alias besr="bundle exec spring rspec"
+   alias besrf="rspec-fzf"
    alias routes="bundle exec spring rake routes"
    alias cdh="cd ~/Documents/himama/hm-proj"
    alias grep="grep --color -n"
@@ -82,6 +83,12 @@
    alias bash-reset=". ~/.bash_profile"
    alias pg=pg_ctl # requires PostgreSQL to be installed
    alias git-ssh=add_id_rsa_to_identities
+   alias qa="heroku apps | grep harry | cut -d: -f2"
+   alias vincognito="vi -i NONE"
+   alias mongod="mongod --dbpath ~/data/db"
+   alias vf="vi-fzf"
+   alias asciint="convert_ascii_integer_to_char"
+   alias n='seq 1 5 | xargs -I{}'
 
 #  ------------------------------
 #  3. Ruby

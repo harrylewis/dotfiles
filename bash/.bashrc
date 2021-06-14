@@ -32,6 +32,9 @@
 
 #  All paths are set in .profile.
 
+  PATH="/usr/local/bin:${PATH}"
+  export PATH
+
 #  Set Default Editor
 #  ------------------------------------------------------------
 

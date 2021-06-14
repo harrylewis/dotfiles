@@ -49,4 +49,8 @@
   sta = stash --include-untracked
   pop = stash pop
   praise = blame
-  deploy-current = !sh -c 'git rev-parse --abbrev-ref HEAD | xargs -I% -n 1 git push --verbose --force himama-dev %:master'
+  deploy-current = !sh -c 'git rev-parse --abbrev-ref HEAD | xargs -I% -n 1 git push --verbose --force himama-dev %:main'
+  file-count = "!git diff master... --name-only | wc -l | tr -s ' ' | cut -d ' ' -f 2"
+  files = diff master... --name-only
+  upstream = !sh -c 'git branch -vv | command grep \\* | cut -d] -f1 | cut -d[ -f2'
+  initt = !sh -c 'git init && git checkout -b main'

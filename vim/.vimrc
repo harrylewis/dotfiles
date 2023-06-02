@@ -52,8 +52,6 @@
 "  2. Colours and Fonts
 "  -------------------------------
 
-   autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-
    autocmd FileType ruby set commentstring=#\ %s
    " this uses vim commentary. alternatively, use
    " ctrl-v (visual mode), pick block, shift-i, insert text, esc-esc to comment

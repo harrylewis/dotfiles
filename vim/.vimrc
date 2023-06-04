@@ -71,20 +71,6 @@
 "  autoindentation
    set autoindent
 
-"  python specific
-   au BufNewFile,BufRead *.py set
-     \ smartindent
-     \ autoindent
-     \ textwidth=79
-     \ fileformat=unix
-     \ encoding=utf-8
-
-"  markdown specific
-   au BufNewFile,BufRead *.md set
-     \ textwidth=79
-     \ fileformat=unix
-     \ encoding=utf-8
-
 "  folding
    set foldmethod=indent
    set foldlevel=99

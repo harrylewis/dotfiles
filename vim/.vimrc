@@ -52,6 +52,7 @@
 "  -------------------------------
 "  2. Colours and Fonts
 "  -------------------------------
+   colorscheme torte
 
    autocmd FileType ruby set commentstring=#\ %s
    " this uses vim commentary. alternatively, use

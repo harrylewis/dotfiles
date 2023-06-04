@@ -15,6 +15,7 @@
 "  -------------------------------
 
 "  syntax highlighting
+   set nocompatible
    syntax on
    filetype on
 

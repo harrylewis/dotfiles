@@ -23,9 +23,7 @@
    set ruler
 
 "  show line numbers and relative line numbers
-   set number
-   " Not working for me at the moment, come back to this later
-"   set relativenumber
+   set relativenumber number
 
 "  configure backsapce to act as expected
    set backspace=indent,eol,start

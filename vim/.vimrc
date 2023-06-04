@@ -58,14 +58,6 @@
    " ctrl-v (visual mode), pick block, shift-i, insert text, esc-esc to comment
    " ctrl-v (visual mode), pick block, d-x
 
-"  show column in color
-   augroup colorcolumn
-     autocmd!
-     autocmd BufEnter * setlocal colorcolumn=81
-   augroup end
-
-   highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
-
 "  -------------------------------
 "  3. Text, Tab and Indentation
 "  -------------------------------

@@ -84,9 +84,6 @@
      autocmd BufWinEnter * silent loadview
    augroup end
 
-"  indent guides using Vundle plugin
-   let g:indent_guides_enable_on_vim_startup=1
-
    autocmd FileType ruby setlocal commentstring=#\ %s
    autocmd BufNewFile,BufRead *.slim set filetype=slim
 

@@ -1,19 +1,3 @@
-"  ----------------------------------------------------------------------------
-"
-"  Description: This file holds all VIM configurations
-"
-"  Sections:
-"  1. VIM User Interface
-"  2. Colours and Fonts
-"  3. Text, Tab and Indentation
-"  4. Editing Mappings
-"
-"  ----------------------------------------------------------------------------
-
-"  -------------------------------
-"  1. VIM User Interface
-"  -------------------------------
-
 "  syntax highlighting
    set nocompatible
    syntax on
@@ -47,19 +31,12 @@
    set laststatus=2
    set scrolloff=1
 
-"  -------------------------------
-"  2. Colours and Fonts
-"  -------------------------------
    colorscheme torte
 
    autocmd FileType ruby set commentstring=#\ %s
    " this uses vim commentary. alternatively, use
    " ctrl-v (visual mode), pick block, shift-i, insert text, esc-esc to comment
    " ctrl-v (visual mode), pick block, d-x
-
-"  -------------------------------
-"  3. Text, Tab and Indentation
-"  -------------------------------
 
 "  1 tab = 2 spaces
    set tabstop=2
@@ -84,10 +61,6 @@
 
    autocmd FileType ruby setlocal commentstring=#\ %s
    autocmd BufNewFile,BufRead *.slim set filetype=slim
-
-"  -------------------------------
-"  4. Editing Mappings
-"  -------------------------------
 
 "  remap code folding
    nnoremap <space> za

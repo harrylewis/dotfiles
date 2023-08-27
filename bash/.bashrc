@@ -185,7 +185,19 @@ dependabot-compat() {
 # -------------------------------------------------------------
 
 vi-fzf() {
-  vi $(fzf)
+  file=`fzf`
+  history -s vi $file
+  vi -o $file
+}
+
+f() {
+  command=$@;
+  file=`fzf`;
+  full_command="$command $file";
+
+  history -s $full_command;
+
+  eval $full_command;
 }
 
 # RSpec with a Fuzzy Finder

@@ -18,6 +18,9 @@ set hlsearch
 " incremental search
 set incsearch
 
+set splitbelow
+set splitright
+
 " list options
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list

@@ -3,6 +3,7 @@
 [user]
   email = harry.lewis@queensu.ca
   name = Harry Lewis
+  signingkey = 6ABA5C88C5FFCE67
 
 [filter "lfs"]
   clean = git-lfs clean %f

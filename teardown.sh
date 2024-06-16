@@ -3,6 +3,11 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 echo "-----> Removing symbolic dotfile links in root directory"
 
+# zsh
+echo "       Removing ~/.zshrc"
+
+rm -f ~/.zshrc
+
 # bash
 echo "       Removing ~/.profile"
 echo "       Removing ~/.bashrc"

@@ -3,6 +3,11 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 echo "-----> Setting symbolic links in root directory to dotfiles"
 
+# zsh
+echo "       Linking ~/.zshrc"
+
+ln -s -f "$SCRIPTPATH/zsh/.zshrc" ~/.zshrc
+
 # bash
 echo "       Linking ~/.profile"
 echo "       Linking ~/.bashrc"

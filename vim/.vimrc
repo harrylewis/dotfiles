@@ -56,10 +56,11 @@ set foldlevel=99
 
 " autosave folds
 " (https://til.hashrocket.com/posts/17c44eda91-persistent-folds-between-vim-sessions)
+" https://vi.stackexchange.com/questions/13864/bufwinleave-mkview-with-unnamed-file-error-32
 augroup savefolds
   autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent loadview
+  autocmd BufWinLeave ?* mkview
+  autocmd BufWinEnter ?* silent loadview
 augroup end
 
 autocmd FileType ruby setlocal commentstring=#\ %s

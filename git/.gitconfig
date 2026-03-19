@@ -45,3 +45,8 @@
   ls = log --oneline
   sta = stash --include-untracked
   pop = stash pop
+
+# Per-machine/company overrides (e.g. work email, signing key).
+# Must remain at the bottom so local values take precedence over the base config above.
+[include]
+  path = ~/.gitconfig.local
